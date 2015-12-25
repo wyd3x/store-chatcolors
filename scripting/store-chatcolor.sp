@@ -189,18 +189,25 @@ public Action:OnChatMessage(&author, Handle:recipients, String:name[], String:me
 	
 	return Plugin_Continue;
 }
-
+// Thanks to https://github.com/KissLick/ColorVariables
 stock StringMap InitColorTrie() {
 	StringMap hTrie = CreateTrie();
-	hTrie.SetString("blue", "\x0C");
+	hTrie.SetString("blue", "\x0B");
+	hTrie.SetString("bluegrey", "\x0A");
+	hTrie.SetString("darkblue", "\x0C");
+	hTrie.SetString("dark-red", "\x02");
+	hTrie.SetString("gold", "\x10");
 	hTrie.SetString("green", "\x04");
-	hTrie.SetString("light-blue", "\x0A");
-	hTrie.SetString("light-red", "\x07");
-	hTrie.SetString("light-yellow", "\x09");
-	hTrie.SetString("orange", "\x10");
-	hTrie.SetString("pink", "\x0E");
+	hTrie.SetString("grey", "\x08");
+	hTrie.SetString("grey2", "\x0D");
+	hTrie.SetString("lightgreen", "\x05");
+	hTrie.SetString("light-red", "\x0F");
+	hTrie.SetString("lime", "\x06");
+	hTrie.SetString("orchid", "\x0E");
+	hTrie.SetString("purple", "\x03");
 	hTrie.SetString("red", "\x02");
-	hTrie.SetString("turquoise", "\x05");
-	hTrie.SetString("yellow-green", "\x06");
+	hTrie.SetString("yellow", "\x09");
+
+
 	return hTrie;
 }
