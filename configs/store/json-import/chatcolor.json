@@ -1,0 +1,175 @@
+
+{
+    "type": "chatcolor",
+    "categories": [
+        {
+            "display_name": "Chat Colors",
+            "description": "Apply colors to your chat.",
+            "require_plugin": "chatcolor",
+            "web_description": null,
+            "web_color": "A90000",
+            "items": [
+				{
+					"name": "chatcolor_blue",
+					"display_name": "Blue",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{blue}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_green",
+					"display_name": "Green",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{green}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_lightblue",
+					"display_name": "Light Blue",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{light-blue}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_lightred",
+					"display_name": "Light Red",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{light-red}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_lightyellow",
+					"display_name": "Light Yellow",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{light-yellow}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_orange",
+					"display_name": "Orange",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{orange}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_pink",
+					"display_name": "Pink",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{pink}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_red",
+					"display_name": "Red",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{red}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_turquoise",
+					"display_name": "Turquoise",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{turquoise}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				},
+				{
+					"name": "chatcolor_yellowgreen",
+					"display_name": "Yellow Green",
+					"description": null,
+					"web_description": null,
+					"type": "chatcolor",
+					"loadout_slot": "chatcolor",
+					"price": "200",
+					"attrs": {
+						"color": "{yellow-green}"
+					},
+					"is_buyable": "1",
+					"is_tradeable": "1",
+					"is_refundable": "1",
+					"expiry_time": null
+				}
+            ]
+        }
+    ]
+}
