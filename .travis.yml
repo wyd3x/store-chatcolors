@@ -1,32 +1,19 @@
 sudo: false
+language: c
 
 addons:
-    apt_packages:
-        - lib32stdc++6  # needed for spcomp
-        - elinks
+  apt_packages:
+    - lib32stdc++6
+    - lftp
 
 env:
-    - SMVERSION=1.7
+  - SOURCEMOD=1.7
+  - SOURCEMOD=1.8
 
-before_script:
-    # install smbuilder
-    - git clone https://github.com/splewis/sm-builder
-    - cd sm-builder
-    - pip install --user -r requirements.txt
-    - python setup.py install --prefix=~/.local
-    - cd ..
-
-    # install the sourcemod compiler
-    - SMPACKAGE="http://sourcemod.net/latest.php?os=linux&version=${SMVERSION}"
-    - wget $SMPACKAGE
-    - tar xfz $(basename $SMPACKAGE)
-    - cd addons/sourcemod/scripting/
-    - chmod +x spcomp
-    - PATH+=":$PWD"
-    - cd ../../..
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: SMVERSION=1.8
 
 script:
-    - smbuilder --flags="-E"
-
-notifications:
-    email: false
+  - bash build.sh $SOURCEMOD $B_FTP_HOST $B_FTP_USER $B_FTP_PASS 
