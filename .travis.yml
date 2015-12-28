@@ -32,9 +32,3 @@ before_script:
   
 script:
   - ./compile.sh
-  
-after_success:
-  - cd ../../../..
-  - cp -rv build-env/addons/sourcemod/scripting/compiled/. $PLUGINS
-  - cd $PLUGINS
-  - find . -type f -exec curl --user $FTPUSER:$FTPPASS --ftp-create-dirs -T {} ftp://$HOME/$SOURCEMOD/{} \;
