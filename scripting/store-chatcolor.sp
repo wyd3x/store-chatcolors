@@ -76,7 +76,7 @@ public OnClientPostAdminCheck(client)
 	g_clientChatColors[client] = -1;
 	if (!g_databaseInitialized)
 		return;
-	if(GetClientFromSerial(GetClientSerial(client)) == 0)
+	if(IsFakeClient(client))
 		return;
 		
 	Store_GetEquippedItemsByType(Store_GetClientAccountID(client), "chatcolor", Store_GetClientLoadout(client), OnGetPlayerChatColor, GetClientSerial(client));
@@ -85,7 +85,7 @@ public OnClientPostAdminCheck(client)
 public Store_OnClientLoadoutChanged(client)
 {
 	g_clientChatColors[client] = -1;
-	if(GetClientFromSerial(GetClientSerial(client)) == 0)
+	if(IsFakeClient(client))
 		return;
 	
 	Store_GetEquippedItemsByType(Store_GetClientAccountID(client), "chatcolor", Store_GetClientLoadout(client), OnGetPlayerChatColor, GetClientSerial(client));
